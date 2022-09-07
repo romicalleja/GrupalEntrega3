@@ -28,7 +28,7 @@ function getJSONData (url){
 
 btn.addEventListener("click", function(e){
     let nasaimg= nasa + "search=?q"+ search.input
-    getJSONData(nasaimg).then(function (resultObj) {
+    getJSONData(nasa).then(function (resultObj) {
         if (resultObj.status === "ok") {
           console.log(resultObj);
           nasaArray = resultObj.data;
