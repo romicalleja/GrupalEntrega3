@@ -1,6 +1,7 @@
 const nasa =  "https://images-api.nasa.gov/";
 const search = document.getElementById("inputBuscar")
 const btn = document.getElementById("btnBuscar")
+let nasaArray =[]
 
 
 function getJSONData (url){
