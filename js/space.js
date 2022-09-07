@@ -33,7 +33,7 @@ btn.addEventListener("click", function(e){
           console.log(resultObj);
           nasaArray = resultObj.data;
           console.log(nasaArray);
-          Showresults();
+          showresults();
 }
 }
 )
