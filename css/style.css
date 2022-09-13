@@ -1,3 +1,17 @@
 main {
     min-height: calc(100vh - 160px);
   }
+
+  .col-1-4{
+  width:25%;
+  float:left;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

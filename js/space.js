@@ -26,13 +26,18 @@ function getJSONData (url){
     });
 }
 
+const getnasa = (search) => {
+  return getJSONData(`${nasa}&"search?q="&query=${search}`);
+
+}
+
 btn.addEventListener("click", function(e){
-    let nasaimg= nasa + "search?q="+ search.input
-    getJSONData(nasaimg).then(function (resultObj) {
+  getJSONData(nasa+"search?q="+{search}).then(function (resultObj) {
         if (resultObj.status === "ok") {
-          console.log(resultObj);
-          nasaArray = resultObj.data;
+          nasaArray = resultObj.data
+          collection =resultObj.data.collection.items;
           console.log(nasaArray);
+          console.log(collection)
           showresults();
 }
 }
@@ -41,5 +46,19 @@ btn.addEventListener("click", function(e){
 )
 
 function showresults(){
-    return alert("hi")
+let result =""
+let busqueda = collection
+{
+  result+=`<div class="row">
+        <div class="col-1-4">
+        <div>
+          <img class="bd-placeholder-img card-img-top" src="${busqueda.href}"
+          <h3>${busqueda.title}</h3>
+          <div>
+            <p>${busqueda.description}</p>
+          </div>
+        </div>
+      </div
+      `
+}
 }
