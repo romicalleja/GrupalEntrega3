@@ -1,9 +1,8 @@
-const nasa =  "https://images-api.nasa.gov/";
 const search = document.getElementById("inputBuscar")
 const btn = document.getElementById("btnBuscar")
 let nasaArray =[]
 let items=[]
-const andro= "http://images-api.nasa.gov/search?q=andromeda"
+const nasa= "http://images-api.nasa.gov/search?q="
 
 function getJSONData (url){
     let result = {};
@@ -33,7 +32,8 @@ const getnasa = (search) => {
 }
 
 btn.addEventListener("click", function(e){
-  getJSONData(andro).then(function (resultObj) {
+  let nasaURL= nasa+ search.input
+  getJSONData(nasaURL).then(function (resultObj) {
         if (resultObj.status === "ok") {
           nasaArray = resultObj.data
           items =resultObj.data.collection.items;
