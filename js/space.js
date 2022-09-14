@@ -53,14 +53,15 @@ for(let i= 0; i < items.length;i++)
   result+=`<div class="row">
         <div class="col-1-4">
         <div>
-          <img class="bd-placeholder-img card-img-top" src="${busqueda.links.href}">
-          <h3>${busqueda.data.title}</h3>
+          <img class="bd-placeholder-img card-img-top" src="${busqueda.links[0].href}">
+          <h3>${busqueda.data[0].title}</h3>
           <div>
-            <p>${busqueda.data.description}</p>
+            <p>${busqueda.data[0].description}</p>
           </div>
         </div>
       </div
       `;
       document.getElementById("contenedor").innerHTML=result
 }
+console.log(busqueda.data.title)
 }}
