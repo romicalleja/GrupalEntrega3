@@ -19,3 +19,8 @@ main {
   height: 200px;
   overflow: scroll;
 }
+
+.foto{
+  align-content: center;
+  width: 100%;
+}

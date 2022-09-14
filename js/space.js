@@ -26,10 +26,6 @@ function getJSONData (url){
     });
 }
 
-const getnasa = (search) => {
-  return getJSONData(`${nasa}&"search?q="&query=${search}`);
-
-}
 
 btn.addEventListener("click", function(e){
   let nasaURL=nasa + search.value
@@ -53,7 +49,7 @@ for(let i= 0; i < items.length;i++)
   result+=`<div class="row">
         <div class="col-1-4">
         <div>
-          <img class="bd-placeholder-img card-img-top" src="${busqueda.links[0].href}">
+          <img class="foto" src="${busqueda.links[0].href}">
           <h3>${busqueda.data[0].title}</h3>
           <div>
             <p class="scroll"}>${busqueda.data[0].description}</p>
