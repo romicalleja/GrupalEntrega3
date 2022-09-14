@@ -57,6 +57,7 @@ for(let i= 0; i < items.length;i++)
           <h3>${busqueda.data[0].title}</h3>
           <div>
             <p>${busqueda.data[0].description}</p>
+            <p>${busqueda.data[0].date_created}</p>
           </div>
         </div>
       </div
