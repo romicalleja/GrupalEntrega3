@@ -15,3 +15,7 @@ main {
   -ms-user-select: none;
   user-select: none;
 }
+.scroll{
+  height: 200px;
+  overflow: scroll;
+}

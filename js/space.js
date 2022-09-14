@@ -56,7 +56,7 @@ for(let i= 0; i < items.length;i++)
           <img class="bd-placeholder-img card-img-top" src="${busqueda.links[0].href}">
           <h3>${busqueda.data[0].title}</h3>
           <div>
-            <p>${busqueda.data[0].description}</p>
+            <p class="scroll"}>${busqueda.data[0].description}</p>
             <p>${busqueda.data[0].date_created}</p>
           </div>
         </div>
