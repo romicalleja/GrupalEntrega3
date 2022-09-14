@@ -32,7 +32,7 @@ const getnasa = (search) => {
 }
 
 btn.addEventListener("click", function(e){
-  let nasaURL= nasa+ search.input
+  let nasaURL=nasa + search.value
   getJSONData(nasaURL).then(function (resultObj) {
         if (resultObj.status === "ok") {
           nasaArray = resultObj.data
